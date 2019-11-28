@@ -1,0 +1,7 @@
+mixin createProduct(products)
+    
+    .col-md-3.my-4
+        .card.shadow.text-center
+            img(src=`${imgPath}/${products.imgUrl}`, alt='img').card-img-top
+            .card-body
+                p.card-text.lead #{products.name} 

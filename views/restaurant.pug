@@ -1,0 +1,13 @@
+extends layouts/main-layout.pug
+include mixins/createProduct.pug
+
+block content
+
+    .container-fluid.mt-3
+    .row.mx-auto
+        include includes/category.pug
+        .col-md-9.mb-4
+            .row
+                if products.length > 0 
+                    each product in products
+                            +createProduct(product)             

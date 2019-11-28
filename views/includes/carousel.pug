@@ -1,0 +1,22 @@
+
+#myCarousel.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li(data-target='#myCarousel', data-slide-to='0')
+      li(data-target='#myCarousel', data-slide-to='1')
+      li.active(data-target='#myCarousel', data-slide-to='2')
+    .carousel-inner
+      .carousel-item
+        img.first-slide(src='/images/slideimg1.jpg', style='width:100%;', alt='First slide')
+        .container
+      .carousel-item
+        img.second-slide(src='/images/slideimg2.jpg', style='width:100%;', alt='Second slide')
+        .container
+      .carousel-item.active
+        img.third-slide(src='/images/slideimg3.jpg', style='width:100%;', alt='Third slide')
+        .container
+    a.carousel-control-prev(href='#myCarousel', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#myCarousel', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next

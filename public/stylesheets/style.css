@@ -1,0 +1,67 @@
+.social-part .fab{
+  padding-right:20px;
+}
+ul li a{
+  margin-right: 20px;
+}
+
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem; 
+}
+
+
+
+.padding{
+  padding-bottom: 2rem;
+}
+
+.sosyal{
+  font-size: 40px;
+  padding: 5px;
+}
+.sosyal:hover{
+  color: darkcyan;
+}
+
+.list-unstyled li {
+  margin-top: 15px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+.list-unstyled li:hover {
+  background-color: #D6D1BF;
+}
+
+.list-unstyled a {
+  color: #497797;
+}
+
+.fa-angle-right {
+  font-size: 20px;
+  color: #497797;
+}
+
+.active1 {
+  background-color: #E0931F;
+}

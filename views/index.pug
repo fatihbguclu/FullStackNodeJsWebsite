@@ -1,0 +1,84 @@
+extends layouts/main-layout.pug
+
+
+
+block content
+
+  include includes/carousel
+
+  .container-fluid.padding.mt-4
+    .row.welcome.text-center
+      .col-12
+        h1.display-4 Sandalye İşinde 1 Numarayız!
+      hr
+      .col-12
+        p.lead
+          | Sandalye Üreticisi Firma olarak 1000 lerce ürün seçeneğinin yanında sizlere kaliteli 
+          | sandalyeleri en uygun şartlarda sunmak birincil hedefimiz. 
+          br
+          |                 Ürünlerimiz hakkında detaylı bilgi ve fiyat teklifleri için bizimle iletişim formunu doldurarak
+          |                 iletişime geçebilirsiniz.
+        button.btn.btn-primary.btn-lg(type='button') İletişim Formu
+  hr
+  .container.padding
+    .row.text-center.padding
+      .col-xs-12.col-sm-6.col-md-4
+        img.img-thumbnail(src='/images/sandalyeci-gorsel1.jpg', alt='')
+        h3 13 Yıllık Tecrübe
+        p.lead
+          | İstanbul Sandalye İmalatçısı Nova Sandalye Olarak Uzman ve tecrübeli kadromuzla size en mükemmel hizmeti sunuyoruz.
+      .col-xs-12.col-sm-6.col-md-4
+        img.img-thumbnail(src='/images/sandalyeci-görsel-3.jpg', alt='')
+        h3 Yüksek Kalite
+        p.lead Ürünlerimizde konfor rahatlık ve kalite üçlüsü önceliğimizdir.
+      .col-sm-12.col-md-4
+        img.img-thumbnail(src='/images/sandalyeci-görsel2.jpg', alt='')
+        h3 100'lerce Çeşit Ürün
+        p.lead
+          | Bir çok kategoride 100 lerce çeşit üründen aradığınızı Nova Sandalye’de bulacaksınız
+    hr.my-4
+  .container-fluid.padding
+    .row.welcome.text-center
+      .col-12
+        h1.display-4 Ürün Grupları
+      hr
+  .container.padding
+    .row.padding.text-center
+      .col-md-4
+        .card
+          .card-body
+            h4.card-title Ahşap Sandalyeler
+            img.card-img-top.img-fluid(src='/images/1.jpg', alt='')
+            a.btn.btn-outline-secondary.mt-4(href='/ahsap-sandalye') Diğer Ürünler
+      .col-md-4
+        .card
+          .card-body
+            h4.card-title Metal Sandalyeler
+            img.card-img-top.img-fluid(src='/images/2.jpg', alt='')
+            a.btn.btn-outline-secondary.mt-4(href='/metal-sandalye') Diğer Ürünler
+      .col-md-4
+        .card
+          .card-body
+            h4.card-title Bar Sandalyeleri
+            img.card-img-top(src='/images/3.jpg', alt='')
+            a.btn.btn-outline-secondary.mt-4(href='bar-sandelye') Diğer Ürünler
+  .container.padding
+    .row.padding.text-center
+      .col-md-4
+        .card
+          .card-body
+            h4.card-title Plastik Sandalyeler
+            img.card-img-top(style='height:300px;', src='/images/4.jpg', alt='')
+            a.btn.btn-outline-secondary.mt-4(href='/plastik-sandalye') Diğer Ürünler
+      .col-md-4
+        .card
+          .card-body
+            h4.card-title Klasik Sandalyeler
+            img.card-img-top(style='height:300px;', src='/images/5.jpg', alt='')
+            a.btn.btn-outline-secondary.mt-4(href='klasik-sandalye') Diğer Ürünler
+      .col-md-4
+        .card
+          .card-body
+            h4.card-title Restaurant Sandalyeleri
+            img.card-img-top(style='height:300px;', src='/images/6.jpeg', alt='')
+            a.btn.btn-outline-secondary.mt-4(href='/restaurant-sandalye') Diğer Ürünler

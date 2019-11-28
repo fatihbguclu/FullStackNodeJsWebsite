@@ -1,0 +1,55 @@
+extends layouts/main-layout
+
+block content
+
+    .container-fluid.padding.my-4
+        .row.welcome.text-center
+            .col-12.p-3(style='background-color:#E0931F; font-size: 30px; color:azure;')
+                h1(style='font-size: 30px;') İletişim
+    .container.padding.my-4
+        .row.mx-auto
+            .card.col-5.my-4.text-center
+                .card-body
+                    h4.card-title
+                        i.fas.fa-map-marked-alt.p-3(style='color:#C4A477; font-size:30px;')
+                        | Fabrika İletişim
+                    p.card-text Üniversite Mahallesi, Bağlariçi Cd. No:7, 34320 Avcılar/İstanbul
+                    p.card-text Telefon: 0212 444 44 44
+                    h4.card-title
+                        i.fas.fa-map-marked-alt.p-3(style='color:#C4A477; font-size:30px;')
+                        | Depo İletişim
+                    p.card-text Üniversite Mahallesi, Bağlariçi Cd. No:7, 34320 Avcılar/İstanbul
+                    p.card-text Telefon: 0212 444 44 44
+            .card.col-6.mx-4.my-4.text-center
+                iframe#gmap_canvas(width='550', height='450', src='https://maps.google.com/maps?q=i%C3%BC%20avc%C4%B1lar&t=&z=13&ie=UTF8&iwloc=&output=embed', frameborder='0', scrolling='no', marginheight='0', marginwidth='0')
+    .container-fluid.my-4
+        .container
+            .row
+                .col-md-12.col-md-offset-3
+                    .well.well-sm
+                        form.form-horizontal(action='', method='post')
+                            fieldset
+                                h3.text-center İletişim Formu
+                                // Name input
+                                .form-group
+                                    label.col-md-3.control-label(for='name') İsim Soyisim
+                                    .col-md-12
+                                        input#name.form-control(name='name', type='text')
+                                // Email input
+                                .form-group
+                                    label.col-md-3.control-label(for='email') E-mail
+                                    .col-md-12
+                                        input#email.form-control(name='email', type='text')
+                                .form-group
+                                    label.col-md-3.control-label(for='phone') Telefon
+                                    .col-md-12
+                                        input#email.form-control(name='email', type='text')
+                                // Message body
+                                .form-group
+                                    label.col-md-3.control-label(for='message') Mesaj
+                                    .col-md-12
+                                        textarea#message.form-control(name='message', rows='5')
+                                // Form actions
+                                .form-group
+                                    .col-md-12.text-center
+                                        button.btn.btn-primary.btn-lg(type='submit') Submit

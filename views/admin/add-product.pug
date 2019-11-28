@@ -1,0 +1,25 @@
+extends ../layouts/main-layout.pug
+
+block content
+    form(action="/admin/add-product" method="POST")
+        .form-group.row
+            label(for="name").col-sm-2.col-form-label Product Name
+            .col-sm-10
+                input.form-control#name(type="text" name="name")  
+        .form-group.row
+            label(for="imageUrl").col-sm-2.col-form-label Image
+            .col-sm-10
+                input.form-control#image(type="text" name="imageUrl")   
+        .form-group.row
+            label(for="cat").col-sm-2.col-form-label Kategori
+            .col-sm-10
+                select.form-control#cat(name="cat")
+                    option(value="1") Ahşap
+                    option(value="2") Metal  
+                    option(value="3") Bar  
+                    option(value="4") Plastik  
+                    option(value="5") Klasik
+                    option(value="6") Restaurant                    
+        .form-group.row
+            .col-sm-10.offset-sm-2
+                input(type="submit" value="Save Product").btn.btn-primary

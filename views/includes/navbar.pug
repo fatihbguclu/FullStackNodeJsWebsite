@@ -1,0 +1,32 @@
+nav.navbar.navbar-expand-sm.navbar-light.bg-light
+  .navbar-brand.text-center LOGO
+  .container
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo03', aria-controls='navbarTogglerDemo03', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarTogglerDemo03.collapse.navbar-collapse
+      ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+        li.nav-item
+          a.nav-link(href='/')
+            | Anasayfa 
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='/about') Hakkımızda
+        li.nav-item.dropdown.dmenu
+          a#navbardrop.nav-link.dropdown-toggle(href='/urun-gruplari', data-toggle='dropdown')
+            | Ürünler
+          .dropdown-menu.sm-menu
+            a.dropdown-item(href='/ahsap-sandalye') Ahşap Sandalyeler
+            a.dropdown-item(href='/metal-sandalye') Metal Sandalyeler
+            a.dropdown-item(href='/bar-sandalye') Bar Sandalyeleri
+            a.dropdown-item(href='/plastik-sandalye') Plastik Sandalyeler
+            a.dropdown-item(href='/klasik-sandalye') Klasik Sandalyeler
+            a.dropdown-item(href='/restaurant-sandalye') Restaurant Sandalyeleri
+        li.nav-item
+          a.nav-link(href='/galeri') Galeri
+        li.nav-item
+          a.nav-link(href='/contact') İletişim
+        
+      .social-part
+        i.fab.fa-facebook.sosyal(aria-hidden='true')
+        i.fab.fa-twitter.sosyal(aria-hidden='true')
+        i.fab.fa-instagram.sosyal(aria-hidden='true')
